@@ -133,9 +133,26 @@ class DecoderOnlyModelManager(ModelManager):
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, revision=revision, trust_remote_code=True, cache_dir=self.cache_dir, padding_side="left")
         self.special_token_flags = [True, False]
 
-        
-
-        if self.bf16:
+        if "falcon-mamba-7b" in model_path:
+            print("opensource mamba model_name:", model_path)
+            self.model = AutoModelForCausalLM.from_pretrained(model_path, revision=revision, trust_remote_code=True, device_map="auto", cache_dir=self.cache_dir, torch_dtype=torch_dtype)
+        elif "mamba2" in model_path.lower():
+            print("mamba2 model_name 2:", model_path)
+            from mamba2.hybrid_wrapper import MambaTransformerHybridModelWrapper
+            self.model = MambaTransformerHybridModelWrapper.from_pretrained(model_path, torch_dtype=torch.bfloat16).model.cuda()
+            self.model.config.use_cache = False
+            self.model.generation_config.use_cache = False
+            print(self.model)
+            print("*********")
+        elif "mamba" in model_path.lower():
+            print("mamba model_name 2:", model_path)
+            from mamba.hybrid_wrapper import MambaTransformerHybridModelWrapper
+            self.model = MambaTransformerHybridModelWrapper.from_pretrained(model_path, torch_dtype=torch.bfloat16).model.cuda()
+            self.model.config.use_cache = False
+            self.model.generation_config.use_cache = False
+            print(self.model)
+            print("============")
+        elif self.bf16:
             # config = transformers.AutoConfig.from_pretrained(model_path, trust_remote_code=True)
             # config.attn_config['attn_impl'] = 'triton'
             # config.init_device = 'cuda:0' # For fast initialization directly on GPU!

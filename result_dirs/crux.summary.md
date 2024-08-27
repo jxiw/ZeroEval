@@ -39,4 +39,10 @@
 |            Qwen2-7B-Instruct            | greedy | 36.75 |    0.12     |   800   |    368.51     |
 |        Meta-Llama-3-8B-Instruct         | greedy | 36.62 |    0.25     |   800   |    411.52     |
 |           reka-flash-20240226           | greedy | 33.25 |      0      |   800   |    565.61     |
+|          MambaInLlama_0_50_v2           | greedy | 29.75 |    2.62     |   800   |    158.23     |
+|          recurrentgemma-9b-it           | greedy | 26.25 |    0.12     |   800   |     170.3     |
+|          MambaInLlama_0_50_v1           | greedy | 25.5  |    3.75     |   800   |    124.25     |
+|          Mamba2InLlama_0_50_v2          | greedy | 24.88 |      0      |   800   |    142.72     |
+|          Mamba2InLlama_0_50_v1          | greedy | 23.75 |    0.25     |   800   |    108.73     |
 |              gemma-2-2b-it              | greedy | 20.75 |      0      |   800   |    351.05     |
+|        falcon-mamba-7b-instruct         | greedy | 8.88  |    62.25    |   800   |    197.65     |

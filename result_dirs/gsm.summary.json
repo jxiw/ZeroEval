@@ -2,10 +2,10 @@
   {
     "Model": "Meta-Llama-3.1-405B-Instruct@hyperbolic",
     "Mode": "greedy",
-    "Acc": "96.90",
-    "No answer": "0.22",
-    "Total": 452,
-    "Reason Lens": "421.47"
+    "Acc": "97.22",
+    "No answer": "0.15",
+    "Total": 648,
+    "Reason Lens": "421.58"
   },
   {
     "Model": "gpt-4o-2024-08-06",
@@ -120,20 +120,20 @@
     "Reason Lens": "375.96"
   },
   {
-    "Model": "claude-3-sonnet-20240229",
-    "Mode": "greedy",
-    "Acc": "91.51",
-    "No answer": "0.00",
-    "Total": 1319,
-    "Reason Lens": "762.69"
-  },
-  {
     "Model": "DeepSeek-Coder-V2-0724",
     "Mode": "greedy",
     "Acc": "91.51",
     "No answer": "0.00",
     "Total": 1319,
     "Reason Lens": "494.62"
+  },
+  {
+    "Model": "claude-3-sonnet-20240229",
+    "Mode": "greedy",
+    "Acc": "91.51",
+    "No answer": "0.00",
+    "Total": 1319,
+    "Reason Lens": "762.69"
   },
   {
     "Model": "gemini-1.5-flash",
@@ -160,20 +160,20 @@
     "Reason Lens": "587.65"
   },
   {
-    "Model": "gemma-2-9b-it",
-    "Mode": "greedy",
-    "Acc": "87.41",
-    "No answer": "0.00",
-    "Total": 1319,
-    "Reason Lens": "394.83"
-  },
-  {
     "Model": "reka-core-20240501",
     "Mode": "greedy",
     "Acc": "87.41",
     "No answer": "0.08",
     "Total": 1319,
     "Reason Lens": "414.70"
+  },
+  {
+    "Model": "gemma-2-9b-it",
+    "Mode": "greedy",
+    "Acc": "87.41",
+    "No answer": "0.00",
+    "Total": 1319,
+    "Reason Lens": "394.83"
   },
   {
     "Model": "Athene-70B",
@@ -280,12 +280,44 @@
     "Reason Lens": "460.06"
   },
   {
+    "Model": " MambaInLlama_0_50_v2",
+    "Mode": "greedy",
+    "Acc": "71.49",
+    "No answer": "2.58",
+    "Total": 1319,
+    "Reason Lens": "207.85"
+  },
+  {
     "Model": "Mixtral-8x7B-Instruct-v0.1",
     "Mode": "greedy",
     "Acc": "70.13",
     "No answer": "2.27",
     "Total": 1319,
     "Reason Lens": "361.12"
+  },
+  {
+    "Model": " Mamba2InLlama_0_50_v2",
+    "Mode": "greedy",
+    "Acc": "69.98",
+    "No answer": "0.38",
+    "Total": 1319,
+    "Reason Lens": "147.91"
+  },
+  {
+    "Model": " MambaInLlama_0_50_v1",
+    "Mode": "greedy",
+    "Acc": "67.70",
+    "No answer": "1.36",
+    "Total": 1319,
+    "Reason Lens": "127.89"
+  },
+  {
+    "Model": " Mamba2InLlama_0_50_v1",
+    "Mode": "greedy",
+    "Acc": "59.36",
+    "No answer": "0.38",
+    "Total": 1319,
+    "Reason Lens": "112.30"
   },
   {
     "Model": "Llama-3-Instruct-8B-SimPO-v0.2",
@@ -318,5 +350,21 @@
     "No answer": "4.78",
     "Total": 1319,
     "Reason Lens": "301.67"
+  },
+  {
+    "Model": "falcon-mamba-7b-instruct",
+    "Mode": "greedy",
+    "Acc": "41.32",
+    "No answer": "8.26",
+    "Total": 1319,
+    "Reason Lens": "389.75"
+  },
+  {
+    "Model": "recurrentgemma-9b-it",
+    "Mode": "greedy",
+    "Acc": "38.51",
+    "No answer": "0.00",
+    "Total": 1319,
+    "Reason Lens": "344.73"
   }
 ]
